@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+        <h1>신규 공방 등록</h1>
+		<form action="/web/register" method="post" enctype="multipart/form-data">
+
+		      ID : <input type="text" name="userId">     &nbsp; &nbsp; &nbsp;     PASSWORD : <input type="password" name="userPw"> <br>
+          workshop user :
+          <select name='workshopUser'>
+            <% for (var i = 0; i<manager.length; i++)  { %>
+              <option value=<%=manager[i].ID%> > <%=manager[i].ID%> </option>
+            <% } %>
+          </select> <br><br>
+          workshop name : <input type="text" name="workshopName"> <br>
+          workshop title : <input type="text" name="workshopTitle"> <br><br>
+          workshop content : <br><textarea rows="5" cols="30" name="workshopContent"> </textarea> <br><br>
+          workshop price : <input type="text" name="workshopPrice"> <br>
+          workshop phone : <input type="text" name="workshopPhone"> <br>
+          workshop dfficulty : <input type="text" name="difficulty"> <br>
+          workshop execution time : <input type="text" name="executionTime"> <br>
+          workshop description : <input type="text" name="workshopDescription"> <br>
+          workshop location : <input type="text" name="workshopLocation"> <br>
+          <br>
+          workshop area1 :
+          <select name='area1value'>
+          	<% for (var i = 0; i<area1.length; i++)  { %>
+							<option value=<%=area1[i].area1Num%> > <%=area1[i].area1Name%> </option>
+						<% } %>
+          </select> <br><br>
+	        workshop area2 :
+	        <select name='area2value'>
+	        	<% for (var i = 0; i<area2.length; i++)  {
+	        		%>
+							<option value=<%=area2[i].area2Num%> > <%=area2[i].area2Name%> </option>
+						<% } %>
+	        </select> <br><br>
+          workshop area3 :
+          <select name='area3value'>
+          	<% for (var i = 0; i<area3.length; i++)  { %>
+							<option value=<%=area3[i].area3Name%> > <%=area3[i].area3Name%> </option>
+						<% } %>
+          </select>
+          <br><br>
+
+          thumbnail : <input type="file" name="thumbnail"><br>
+          image 1  : <input type="file" name="workshopImage"><br>
+          image 2 : <input type="file" name="workshopImage"><br>
+          image 3 : <input type="file" name="workshopImage"><br>
+          image 4 : <input type="file" name="workshopImage"><br>
+          image 5 : <input type="file" name="workshopImage"><br>
+          image 6 : <input type="file" name="workshopImage"><br>
+          image 7 : <input type="file" name="workshopImage"><br>
+          image 8 : <input type="file" name="workshopImage"><br>
+          image 9 : <input type="file" name="workshopImage"><br>
+          image 10 : <input type="file" name="workshopImage"><br>
+          image 11 : <input type="file" name="workshopImage"><br>
+          image 12 : <input type="file" name="workshopImage"><br>
+          image 13 : <input type="file" name="workshopImage"><br>
+          image 14 : <input type="file" name="workshopImage"><br>
+          image 15 : <input type="file" name="workshopImage"><br>
+          image 16 : <input type="file" name="workshopImage"><br>
+          image 17 : <input type="file" name="workshopImage"><br>
+          image 18 : <input type="file" name="workshopImage"><br>
+          image 19 : <input type="file" name="workshopImage"><br>
+          image 20 : <input type="file" name="workshopImage"><br>
+          image 21 : <input type="file" name="workshopImage"><br>
+          image 22 : <input type="file" name="workshopImage"><br>
+          image 23 : <input type="file" name="workshopImage"><br>
+          image 24 : <input type="file" name="workshopImage"><br>
+          image 25 : <input type="file" name="workshopImage"><br>
+          image 26 : <input type="file" name="workshopImage"><br>
+          image 27 : <input type="file" name="workshopImage"><br>
+          image 28 : <input type="file" name="workshopImage"><br>
+          image 29 : <input type="file" name="workshopImage"><br>
+          image 30 : <input type="file" name="workshopImage"><br><br><br>
+
+			<input type="submit" value="공방 추가">
+		</form>
+  </body>
+</html>

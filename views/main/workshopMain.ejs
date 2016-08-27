@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="mainModule">
+  <head>
+  	<meta charset="utf-8">
+  	<title>im example page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery-1.10.1.min.js"></script><!-- load jquery -->
+    	<script src="/javascripts/angular-1.4.0.min.js"></script><!-- load angular -->
+    <script src="/javascripts/workshopMain.js"></script>
+  </head>
+  <body class="container" ng-controller="allWorkshopController as aw">
+  	<div class = "workshopShow" ng-repeat="workshop in aw.workshops">
+  		<h3>
+  			<!--workshop에는 공방 정보가 있다.-->
+
+  		</h3>
+    </div>
+  </body>
+</html>
